@@ -115,7 +115,6 @@ phases:
       - #aws eks list-clusters
       - terraform validate
       - #"cd .."
-      - terraform apply tfplan  
   post_build:
     commands:
       - echo "completed on `date`"
