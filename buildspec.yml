@@ -109,7 +109,6 @@ phases:
       - "echo kube config"
       - rm -f ~/.kube/config
       - sleep 1
-      - kubectl get nodes
       - ls -l
       - #
       - terraform init
