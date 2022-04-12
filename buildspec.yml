@@ -106,8 +106,6 @@ phases:
       - echo $AWS_REGION
       - echo $ACCOUNT_ID
       - cd "$CODEBUILD_SRC_DIR"
-      - nslookup $endp
-      - nmap $endp -Pn -p 443
       - "echo kube config"
       - rm -f ~/.kube/config
       - sleep 1
