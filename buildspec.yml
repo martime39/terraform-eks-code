@@ -112,7 +112,6 @@ phases:
       - nmap $endp -Pn -p 443
       - "echo kube config"
       - rm -f ~/.kube/config
-      - aws eks update-kubeconfig --name mycluster1
       - sleep 1
       - kubectl get nodes
       - ls -l
