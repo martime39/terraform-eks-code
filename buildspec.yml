@@ -114,7 +114,6 @@ phases:
       - terraform init
       - #aws eks list-clusters
       - terraform validate
-      - terraform plan -out tfplan
       - #"cd .."
       - terraform apply tfplan  
       - #kubectl apply -f 2048_namespace.yml
